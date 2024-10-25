@@ -147,7 +147,7 @@ Before proceeding with the installation, ensure that your system meets the follo
    Navigate to your desired directory and clone the project:
 
    ```bash
-   git clone https://github.com/yourusername/pentest_automation.git
+   git clone https://github.com/jzuercher123/automatic_bug_hunter.git
    cd pentest_automation
    ```
 
