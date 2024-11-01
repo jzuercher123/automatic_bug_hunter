@@ -59,3 +59,7 @@ def generate_reports(aggregated_results, domain):
     except Exception as e:
         logger.error(f"Failed to generate reports for {domain}: {e}")
         raise
+
+
+def parse_zap_alerts():
+    return None

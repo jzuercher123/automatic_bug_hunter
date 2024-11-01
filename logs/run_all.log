@@ -1,0 +1,18 @@
+[32m[INFO][0m Starting the automated pentesting application.
+[32m[INFO][0m Creating a Python virtual environment.
+bash: /c/Users/13096/automatic_bug_hunter/venv/bin/activate: No such file or directory
+[32m[INFO][0m Starting the automated pentesting application.
+run_all.sh: line 56: /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate: No such file or directory
+[32m[INFO][0m Starting the automated pentesting application.
+run_all.sh: line 56: /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate: No such file or directory
+[32m[INFO][0m Starting the automated pentesting application.
+./scripts/run_all.sh: line 56: /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate: No such file or directory
+[32m[INFO][0m Starting the automated pentesting application.
+run_all.sh: line 56: /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate: No such file or directory
+[32m[INFO][0m Starting the automated pentesting application.
+[32m[INFO][0m Python virtual environment already exists at /mnt/c/Users/13096/automatic_bug_hunter/venv.
+[31m[ERROR][0m Activation script not found at /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate.
+[32m[INFO][0m Starting the automated pentesting application.
+[32m[INFO][0m Python virtual environment already exists at /mnt/c/Users/13096/automatic_bug_hunter/venv.
+[31m[ERROR][0m Activation script not found at /mnt/c/Users/13096/automatic_bug_hunter/venv/bin/activate.
+[31m[ERROR][0m Recreating the virtual environment.

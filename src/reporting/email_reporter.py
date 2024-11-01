@@ -1,10 +1,12 @@
 import subprocess
 
-def send_email(report_paths, recipient_email):
+# function to send an email
+def send_email(subject, body, recipient):
+    # use the subprocess module to send an email
     try:
-        attachments = ' '.join(report_paths)
-        subject = "Automated Pentest Report"
-        body = "Please find the attached pentest reports."
-        subprocess.run(['mutt', '-s', subject, '-a'] + report_paths + ['--', recipient_email], input=body.encode())
+        subprocess.run(['echo', f'{body} | mail -s {subject} {recipient}'], shell=True)
+        return True
     except Exception as e:
         print(f"Error sending email: {e}")
+        return False
+

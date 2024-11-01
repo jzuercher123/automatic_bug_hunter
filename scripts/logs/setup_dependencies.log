@@ -1,1 +1,57 @@
 2024-10-24 21:36:52,559 - INFO - Starting dependency installation process.
+2024-10-24 21:47:54,566 - INFO - Starting dependency installation process.
+2024-10-24 21:48:05,596 - INFO - Starting dependency installation process.
+2024-10-24 21:48:05,596 - ERROR - This script must be run as root.
+2024-10-24 21:48:48,470 - INFO - Starting dependency installation process.
+2024-10-24 21:48:48,470 - ERROR - This script must be run as root.
+2024-10-26 22:58:47,277 - INFO - Starting dependency installation process.
+2024-10-26 22:58:47,279 - INFO - Starting dependency installation process.
+2024-10-26 22:58:47,277 - INFO - Starting dependency installation process.
+2024-10-26 22:58:47,279 - ERROR - This script must be run as root.
+2024-10-26 22:58:47,280 - ERROR - This script must be run as root.
+2024-10-26 22:58:47,280 - ERROR - This script must be run as root.
+2024-10-26 22:59:24,232 - INFO - Starting dependency installation process.
+2024-10-26 22:59:24,233 - ERROR - This script must be run as root.
+2024-10-26 22:59:30,772 - INFO - Starting dependency installation process.
+2024-10-26 22:59:30,772 - ERROR - This script must be run as root.
+2024-10-26 23:00:04,071 - INFO - Starting dependency installation process.
+2024-10-26 23:02:00,378 - INFO - Starting dependency installation process.
+2024-10-26 23:02:00,379 - ERROR - This script requires root privileges. Please run as root.
+2024-10-26 23:02:16,860 - INFO - Starting dependency installation process.
+2024-10-26 23:02:16,863 - INFO - Detected OS: unknown
+2024-10-26 23:02:16,872 - INFO - Detected architecture: x86_64
+2024-10-26 23:02:16,874 - ERROR - Unsupported or unrecognized operating system.
+2024-10-26 23:03:24,278 - INFO - Starting dependency installation process.
+2024-10-26 23:03:24,280 - ERROR - This script requires root privileges. Please run as root.
+2024-10-26 23:03:29,440 - INFO - Starting dependency installation process.
+2024-10-26 23:03:29,442 - INFO - Detected Linux distribution ID: kali
+2024-10-26 23:03:29,442 - INFO - Detected OS: debian
+2024-10-26 23:03:29,443 - INFO - Detected architecture: x86_64
+2024-10-26 23:03:29,443 - INFO - Updating package list...
+2024-10-26 23:03:34,156 - INFO - Installing packages: nmap nikto mutt default-jdk wget curl unzip
+2024-10-26 23:04:12,719 - INFO - Packages installed successfully.
+2024-10-26 23:04:12,720 - INFO - Installing OWASP ZAP manually...
+2024-10-26 23:04:13,449 - INFO - Downloading OWASP ZAP from https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Linux.tar.gz
+2024-10-26 23:05:17,472 - INFO - OWASP ZAP installed successfully.
+2024-10-26 23:05:18,507 - INFO - Installing Python dependencies from requirements.txt...
+2024-10-26 23:05:25,254 - ERROR - Failed to install Python dependencies: Command '['/usr/bin/python3', '-m', 'pip', 'install', '--upgrade', 'pip']' returned non-zero exit status 1.
+2024-10-26 23:10:45,613 - INFO - Starting dependency installation process.
+2024-10-26 23:10:45,616 - INFO - Detected Linux distribution ID: kali
+2024-10-26 23:10:45,617 - INFO - Detected OS: debian
+2024-10-26 23:10:45,617 - INFO - Detected architecture: x86_64
+2024-10-26 23:10:45,618 - INFO - Updating package list...
+2024-10-26 23:10:50,425 - INFO - Installing packages: python3-venv nmap nikto mutt default-jdk wget curl unzip
+2024-10-26 23:10:55,912 - INFO - Packages installed successfully.
+2024-10-26 23:10:55,913 - INFO - Installing OWASP ZAP manually...
+2024-10-26 23:10:57,793 - INFO - Downloading OWASP ZAP from https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Linux.tar.gz
+2024-10-26 23:11:39,089 - ERROR - Failed to install OWASP ZAP: Command '['ln', '-s', '/opt/zaproxy/zap.sh', '/usr/local/bin/zap.sh']' returned non-zero exit status 1.
+2024-10-26 23:13:51,422 - INFO - Starting dependency installation process.
+2024-10-26 23:13:51,424 - INFO - Detected Linux distribution ID: kali
+2024-10-26 23:13:51,424 - INFO - Detected OS: debian
+2024-10-26 23:13:51,425 - INFO - Detected architecture: x86_64
+2024-10-26 23:13:51,425 - INFO - Updating package list...
+2024-10-26 23:14:10,913 - INFO - Installing packages: python3-venv nmap nikto mutt default-jdk wget curl unzip
+2024-10-26 23:14:21,161 - INFO - Packages installed successfully.
+2024-10-26 23:14:21,168 - INFO - Installing OWASP ZAP manually...
+2024-10-26 23:14:22,743 - INFO - Downloading OWASP ZAP from https://github.com/zaproxy/zaproxy/releases/download/v2.15.0/ZAP_2.15.0_Linux.tar.gz
+2024-10-26 23:15:20,943 - ERROR - Failed to install OWASP ZAP: Command '['ln', '-s', '/opt/zaproxy/zap.sh', '/usr/local/bin/zap.sh']' returned non-zero exit status 1.

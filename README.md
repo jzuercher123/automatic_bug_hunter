@@ -147,7 +147,7 @@ Before proceeding with the installation, ensure that your system meets the follo
    Navigate to your desired directory and clone the project:
 
    ```bash
-   git clone https://github.com/jzuercher123/automatic_bug_hunter.git
+   git clone https://github.com/jzuercher123/automatic_bug_hunter./.git
    cd pentest_automation
    ```
 
@@ -388,7 +388,7 @@ python3 src/scanning/nmap_scan.py --target example.com --output_dir reports/nmap
 source venv/bin/activate
 
 # Run the Nikto scan script
-python3 src/scanning/nikto_scan.py --target example.com --output_dir reports/nikto/example.com/
+python3 src/scanning/test_nikto_scan.py --target example.com --output_dir reports/nikto/example.com/
 ```
 
 **Parameters**:

@@ -1,6 +1,13 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-HACKERONE_API_TOKEN = 'your_hackerone_api_token'
+load_dotenv()
+
+HACKERONE_API_TOKEN = os.getenv('HACKERONE_API_KEY')
+if not HACKERONE_API_TOKEN:
+    raise Exception('HackerOne API key not found')
+
 
 def fetch_scoped_domains():
     headers = {

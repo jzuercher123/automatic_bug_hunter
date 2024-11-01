@@ -3,7 +3,7 @@ from scanning.nmap_scan import run_nmap_scan
 from scanning.nikto_scan import run_nikto_scan
 from reporting.report_generator import generate_reports
 from reporting.email_reporter import send_email_report
-from utils.error_handler import safe_run
+from utils.logger import safe_run
 
 def run_pentest_on_domain(domain):
     logger = logging.getLogger(__name__)
@@ -41,3 +41,6 @@ def run_pentest_on_domain(domain):
     send_email_report(report_files)
 
     logger.info(f"Pentest cycle completed for domain: {domain}")
+
+
+

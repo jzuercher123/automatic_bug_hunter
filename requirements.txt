@@ -1,0 +1,7 @@
+pip~=23.2.1
+wheel~=0.41.2
+setuptools~=41.2.0
+markdown
+jinja2
+requests
+pytest
