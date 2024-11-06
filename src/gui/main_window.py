@@ -9,8 +9,6 @@ from PySide6.QtCore import Qt, QThread, Signal
 from src.domain_selection import fetch_scoped_domains
 from src.scanning.nmap_scan import run_nmap_scan
 from src.scanning.nikto_scan import run_nikto_scan
-from src.reporting.report_generator import generate_reports
-from src.reporting.email_reporter import send_email_report
 from src.utils.logger import safe_run
 
 import logging
@@ -56,8 +54,6 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.setWindowTitle("Automated Pentesting Application")
         self.setGeometry(100, 100, 800, 600)
-
-        self.domain_selector = fetch_scoped_domains(api_token='your_api_token')
 
         # Main widget and layout
         self.main_widget = QWidget()
@@ -212,29 +208,6 @@ class MainWindow(QMainWindow):
         QMessageBox.information(self, "Scan Completed", "The scan has been completed successfully.")
         logger.info("Scan process finished.")
 
-        # Generate reports
-        generate_markdown_report(results, 'example.com')  # Modify for dynamic domains
-        generate_json_report(results, 'example.com')
-        generate_html_report(results, 'example.com')
-
-        # Send email report
-        email_reporter = EmailReporter(
-            smtp_server='smtp.example.com',
-            smtp_port=587,
-            username='user@example.com',
-            password='password',
-            recipient='recipient@example.com'
-        )
-        email_reporter.send_email(
-            subject='Pentesting Report for example.com',
-            body='Please find the attached pentesting report.',
-            attachments=[
-                'reports/markdown/example.com.md',
-                'reports/json/example.com.json',
-                'reports/html/example.com.html'
-            ]
-        )
-        logger.info("Reports generated and emailed successfully.")
 
     def view_report(self):
         report_path, _ = QFileDialog.getOpenFileName(self, "Open Report", "reports/",
